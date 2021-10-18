@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-color: black;
+    border-bottom: 1px solid gold;
+    margin-bottom: 25px;
+}
+
+header >h2{
+    color: gold;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+header > span{
+    color: gold;
+    font-weight: 600;
+    padding: 10px;
+    margin-right: 20px;
+}
+.imgbanco{
+    width: 50%;
+    height: 50%;
+}
+div#root-app {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding: 5% 0;
+}
+
+
+form#ingreso {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+  form#ingreso > *{
+    margin-bottom: 2.5vh;
+}
+form#ingreso > label{
+    color: gold;
+    font-size: 22px;
+}
+form#ingreso > input{
+    border-radius: 7px;
+    height: 44px;
+    border: solid 1px gold;
+    outline: none;
+}
+form#ingreso > select{
+    border-radius: 7px;
+    height: 44px;
+    border: solid 1px gold;
+    outline: none;
+}
+form#ingreso > #BtnIngreso{
+    height: 44px;
+    border: none;
+    background-color: gold;
+    color: black;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+#incorrecto{
+    color: gold;
+}
+div#opcionesUsuario > #BtnIngreso{
+    height: 45px;
+    width: 200px;
+    border: none;
+    background-color:gold;
+    color: black;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-left: 1em;
+}
+#opcionesUsuario{
+    display: none;
+}
+#interaccion{
+display: none;
+}
+div#interaccion > input{
+border-radius: 7px;
+height: 30px;
+width: 200px;
+margin-top: 15px;
+margin-left: 20px;
+border: solid 1px gold;
+outline: none;
+}
+div#interaccion > p{
+color: gold;
+text-align: center;
+margin-top: 18px;
+margin-left: 25px;
+font-size: 1.5em;
+}

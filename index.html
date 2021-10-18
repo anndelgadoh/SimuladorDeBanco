@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/Diseño/Banco.png" type="image/x-icon">
+</head>
+<body>  
+    <!--Inicio-->
+    <header>
+        <h2>BIENVENIDOS A ESTE BANCO ONLINE</h2>
+        <span class="logo">DEV.F</span>
+    </header>
+    <!--Usuarios-->
+    <img src="/Diseño/Banco.png"  class="imgbanco" alt="Banco">
+    <div id="root-app" class="root-app">
+        <form id="ingreso">
+            <label for="usuario">Por favor selecione su usuario</label>
+            <select name="usuario" id="usuario">
+                <option value="">Elija una opción</option>
+            </select>
+            <label for="contraseña">Ingrese su contraseña</label>
+            <input type="password" id="password" name="password" />
+            <p id="incorrecto"></p>
+            <input type="submit" id="BtnIngreso" value="Ingresar" onclick="Comparar(event)" />
+        </form>
+        <!--Botones de ingreso-->
+        <div id="opcionesUsuario" class="root-app">
+            <button id="BtnIngreso" onclick="movimientos(event,1)">Consultar Saldo</button>
+            <button id="BtnIngreso" onclick="movimientos(event,2)">Retirar</button>
+            <button id="BtnIngreso" onclick="movimientos(event,3)">Depositar</button>
+        </div>
+        <!--Saldo-->
+        <div class="root-app" id="interaccion">
+            <input type="text" id="monto">
+            <p id="saldo"></p>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
